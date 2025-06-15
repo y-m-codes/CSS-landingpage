@@ -1,0 +1,195 @@
+
+/* to do: make all the margins/alignment, then specify responsive design stuff like grow, shrink, basis, wrap, etc */ 
+
+
+body {
+    font-family: Roboto, Verdana, sans-serif;
+    margin: 0; /* this removes the random white space around all your content */ 
+}
+
+.box-1 {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.header-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin: 0 200px;
+}
+
+.left-header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.right-header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+.title-items {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 80px 200px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.left-items {
+    height: 200px;
+    width: 450px;
+    min-width: 407px;
+}
+
+.big-message {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.subtitle {
+    color: #E5E7EB;
+}
+
+.button-no-outline {
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.large-image-placeholder {
+    height: 200px;
+    width: 450px;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 50px 30px 50px; 
+    flex: 1 1 0; 
+}
+
+.heading {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+}
+
+.info-card {
+   width: 100px;
+}
+
+.small-img-placeholder {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+}
+
+.card-caption {
+    font-size: 10px;
+    text-align: center;
+}
+
+.box-3 {
+    background-color: #E5E7EB;
+    padding: 40px 200px;
+    flex: 1 1 0; 
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: lighter; /* didn't work on Verdana. now works on Roboto */ 
+}
+
+.quote-attribution {
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+    text-align: end;
+}
+
+.box-4 {
+   margin: 80px 200px;
+   padding: 50px 80px;
+   background-color: #3882F6;
+   color: white;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   border-radius: 5px;
+}
+
+.subheading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.body-text {
+    font-size: 16px;
+}
+
+button {
+    color: white;
+    background-color: #3882F6;
+    font-weight: 50;
+    font-size: 12px;
+    width: 80px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+.button-outlined {
+    border: 1px solid white; 
+    border-radius: 5px; 
+    height: 20px;
+    min-width: 55px;
+}
+
+/*  Why is this button so tall, and the other one isn't, but they both don't have a set height? */ 
+
+/* Note to self about styling buttons: 
+i) I had to remove the default border, using border-style: none
+ii) For the button that had no actual border, I had to format the button type directly to give rounded edges
+iii) For the button that had a differently coloured border, I added a border like to a normal container/element, and formatted it that way */ 
+
+.footer {
+background-color: #1F2937;
+color: white;
+font-size: 12px;
+display: flex;
+justify-content: center;
+padding: 30px;
+}
