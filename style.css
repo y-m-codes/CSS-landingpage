@@ -1,7 +1,4 @@
 
-/* to do: make all the margins/alignment, then specify responsive design stuff like grow, shrink, basis, wrap, etc */ 
-
-
 body {
     font-family: Roboto, Verdana, sans-serif;
     margin: 0; /* this removes the random white space around all your content */ 
@@ -49,8 +46,7 @@ a {
     flex-direction: row;
     padding: 0px;
     margin: 80px 200px;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-between;
 }
 
 .left-items {
